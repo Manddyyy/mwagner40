@@ -1,0 +1,134 @@
+Problem Statement:
+a program that takes in your weight in pounds, your age in years, and the number of months 
+passed your birthday. It takes the weight in pounds times the surface gravity of a planet 
+and outputs the results. The second part of this program takes in age in years and age in 
+months and adds them, then divides by the orbital period of the planet, then outputs the 
+total age in years.
+
+Nouns: weight pounds, age years, months, surface gravity, planet, results, orbital period,
+
+Verbs: times, output, takes, add, divide,
+
+
+
+
+
+INPUTS:
+   output
+   planet
+   pounds
+   weightPounds
+  planetSurfaceGravity
+
+PROCESSING:
+  Prompt for weightPounds
+  weightPounds = number
+  weightPounds = pounds * planetSurfaceGravity
+
+OUTPUTS:
+  output
+  planet
+  pounds
+
+
+
+
+
+
+INPUTS:
+ daysOld
+ monthsOld
+ planet
+ yearsOld
+ orbitalPeriod
+ output 
+
+PROCESSING:
+  Prompt for daysOld
+  Prompt for monthsOld
+  daysOld = number
+  monthsOld = number
+  daysOld = (yearsOld * 365) + (monthsOld * 365)
+
+OUTPUTS:
+  planet
+  daysOld
+  output
+
+
+
+
+
+
+
+
+calculateWeightOnOtherPlanets
+    prompt user for weightPounds
+    weightPounds = Number
+    weightPounds = pounds * planetSurfaceGravity
+    output weightPounds and planet
+END
+
+
+
+
+calculateAgeOnOtherPlanets
+    prompt user for yearsOld
+    prompt user for monthsOld
+    monthsOld = Number
+    yearsOld = Number
+    yearsOld = daysOld / orbitalPeriod
+    output yearsOld and planet
+END
+
+
+
+
+
+
+
+
+TEST CASE 1:
+
+  INPUT VALUES: 19, 1, 113
+
+  EXPECTED RESULT:        79 , 43 
+                          31, 103
+                          19, 113
+                          258, 19
+                          10, 43
+                          2, 286
+                          1, 120
+                          0, 102
+                          0, 136
+
+  ACTUAL RESULT: You are about 79 years old on Mercury
+                 Your weight is 43 pounds on Mercury
+
+TEST CASE 2:
+
+  INPUT VALUES: ` , ~ , @
+
+  EXPECTED RESULT:  NaN
+     
+  ACTUAL RESULT: You are about NaN years old on Mercury
+                 Your weight is NaN pounds on Mercury
+
+TEST CASE 3:
+
+  INPUT VALUES: " "
+
+  EXPECTED RESULT:  0 for all outputs
+
+  ACTUAL RESULT:  0 for all outputs
+
+TEST CASE 4:
+
+  INPUT VALUES: a, b, c, 
+
+  EXPECTED RESULT: NaN
+         ACTUAL RESULT:  You are about NaN years old on Mercury
+         Your weight is NaN pounds on Mercury
+
+
+
